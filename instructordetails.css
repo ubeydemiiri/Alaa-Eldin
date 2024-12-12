@@ -1,0 +1,159 @@
+
+:root {
+--bodyColor: #222222;
+--bodyBg: #fbfbfb;
+--bodyBg1: #f7f7f7;
+--whiteColor: #ffffff;
+--whitegrey: #6a7c92;
+--whitegrey1: #ededed;
+--whitegrey2: #f2f6f7;
+--whitegrey3: #e7deff;
+--headingColor: #222222;
+--contentColor: #5f6c76;
+--contentColor2: #5c727d;
+--primaryColor: #5f2ded;
+--secondaryColor: #f2277e;
+--secondaryColor2: #ff275a;
+--secondaryColor3: #ff2828;
+--blackColor: #000000;
+--blackColor2: #191b1e;
+--darkblack: #0c0e2b;
+--darkcolor: #263546;
+--darkgray: #9fa2ce;
+--deepgray: #202942;
+--lightGrey: #7b8696;
+--lightGrey2: #7b8697;
+--lightGrey3: #7e858b;
+--lightGrey4: #a2a9b6;
+--lightGrey5: #f0f0f5;
+--lightGrey8: #f0f1f3;
+--lightGrey6: #6d6e75;
+--lightGrey7: #f3f4fd;
+--lightGrey9: #9f98b2;
+--lightGrey10: #f5f5fe;
+--lightGrey11: #f7f8fd;
+--lightGrey12: #f0f4f7;
+--greencolor: #44cea9;
+--greencolor2: #1ec902;
+--greencolor3: #2ec14a;
+--orange: #fe2323;
+--borderColor: #eeeeee;
+--borderColor1: #e5e5e5;
+--borderColor2: #dddddd;
+--borderColor3: #f8f8f8;
+--borderColor4: #cacaca;
+--darkdeep1: #170f2f;
+--darkdeep2: #37404e;
+--darkdeep3: #f4f4f8;
+--darkdeep4: #949392;
+--darkdeep5: #62605d;
+--darkdeep6: #7e8285;
+--darkdeep7: #c4c4c4;
+--indigo: #b13bff;
+--deepgreen: #133344;
+--deepblue: #505975;
+--deepred: #dc164d;
+--skycolor: #03a9f4;
+--yellow: #ff912c;
+--yellow1: #f0b410;
+--blue: #2864ff;
+--naveBlue: #17093e;
+--borderRadius: 4px;
+--borderRadius2: 20px;
+--borderRadius3: 10px;
+--transition: 0.3s;
+--bodyFont: "Inter", sans-serif;
+--headingFont: "Hind", sans-serif;
+--contentFont: "Inter", sans-serif;
+}
+
+.bg-secon{
+background: var(--darkdeep1);
+} 
+.footer-hover {
+
+color: var(--darkgray); 
+}
+.p-secon{
+color: var(--darkgray);
+}
+.footer-hover:hover {
+
+color: var(--indigo);
+text-decoration: underline;
+}
+.img-text {
+/* color: #ffffff; */
+color: var(--borderColor);
+}
+.img-text:hover {
+
+color: var(--indigo);
+text-decoration: underline;
+}
+.bg-icon-footer{
+background: var(--deepgray);
+}
+.icon-footer-hover {
+
+color: var(--whitegrey);
+}
+
+.icon-footer-hover:hover {
+
+color: rgb(255, 255, 255);
+}
+.footer{
+background-color: rgb(12, 14, 43);
+position: relative;
+top: 200px;
+}
+
+body{
+    background-color: rgb(251, 251, 251);
+}
+
+.rotate1{
+    animation: spin 4.25s linear infinite;
+}
+.img-ani2{
+  animation-name: leftnright;
+  animation-duration: 2s;
+  animation-iteration-count: infinite;
+}
+.img-ani{
+ animation-name: upNdown;
+ animation-duration: 3s;
+ animation-iteration-count: infinite;
+}
+@keyframes upNdown{
+    0% {
+        transform: translateY(10px);
+    }
+    50%{
+        transform: translateY(-10px);
+    }
+    100%{
+        transform: translateY(10px);
+    }
+}
+@keyframes leftnright{
+    0% {
+        transform: translateZ(10px);
+    }
+    50%{
+        transform: translateX(-10px);
+    }
+    100%{
+        transform: translateZ(10px);
+    }
+}
+@keyframes spin {
+0% {
+    transform: rotate(0deg);
+}
+100% {
+    transform: rotate(360deg);
+}
+
+}

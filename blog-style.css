@@ -1,0 +1,53 @@
+body {
+    background: rgb(231, 214, 221);
+    background: linear-gradient(
+      90deg,
+      rgba(231, 214, 221, 1) 0%,
+      rgba(255, 255, 255, 1) 100%
+    );
+    font-family: sans-serif;
+  
+  }
+
+  .bd {
+    background-color: #5f2ded;
+  }
+  .nn {
+    color: #ffffff;
+  }
+
+  .ww:hover {
+    color: #5f2ded;
+  }
+  .nour1 {
+    color: rgb(110, 122, 133);
+  }
+  .m {
+    background-color: rgb(110, 122, 133);
+  }
+  a {
+    text-decoration: none;
+  }
+
+  .nour:hover {
+    color: #5f2ded;
+    text-decoration: underline;
+  }
+  .color3 {
+    background-image: url(./imges/footer_bg_ai.png);
+  }
+  .button:hover {
+    background-color: #170f2f;
+  }
+  .button {
+    background-color: #5f2ded;
+  }
+  .color2:hover {
+    background-color: #5f2ded;
+  }
+  .h {
+    color: #5f2ded;
+  }
+
+  /*  */
+  

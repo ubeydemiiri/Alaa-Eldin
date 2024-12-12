@@ -1,0 +1,194 @@
+
+.lambIcon img {
+  position: absolute;
+
+}
+
+.lambIcon {
+  left: 55%;
+  top: 35%;
+  animation: lamb 5s ease-in-out infinite;
+}
+
+.bookIcon {
+  top: 60%;
+  left: 10%;
+  animation: bookAnim 4.7s ease-in-out infinite;
+}
+
+
+.dunyaIcon {
+  top: 30%;
+  left: 5%;
+  animation: earthAni 15s infinite;
+}
+
+.ucgen {
+  right: 8%;
+  top: 30%;
+  animation: ucgenAni 4s infinite;
+}
+
+
+@keyframes earthAni {
+  0% {
+    transform: rotate(0deg);
+  }
+
+  25% {
+    transform: rotate(170deg);
+  }
+
+  50% {
+    transform: rotate(-170deg);
+  }
+
+  75% {
+    transform: rotate(170deg);
+  }
+
+  100% {
+    transform: rotate(0deg);
+  }
+}
+
+@keyframes ucgenAni {
+  0% {
+    transform: translateX(-10px);
+  }
+
+  50% {
+    transform: translateX(8px);
+  }
+
+  100% {
+    transform: translateX(-10px);
+  }
+}
+
+@keyframes lamb {
+  0% {
+    transform: translateY(-10px);
+  }
+
+  50% {
+    transform: translateY(15px);
+  }
+
+  100% {
+    transform: translateY(-10px);
+  }
+}
+
+@keyframes bookAnim {
+  0% {
+    transform: translateY(-15px);
+  }
+
+  50% {
+    transform: translateY(15px);
+  }
+
+  100% {
+    transform: translateY(-15px);
+  }
+}
+
+.card-book img {
+  width: 100%;
+  height: 260px;
+  transition: transform 0.3s ease-in-out;
+}
+
+.card-book2 img {
+  width: 100%;
+  height: 460px;
+  transition: transform 0.3s ease-in-out;
+}
+
+.card img:hover {
+  transform: scale(1.2);
+}
+
+.card {
+  overflow: hidden;
+}
+
+.zoom {
+  position: relative;
+  overflow: hidden;
+}
+
+.card-book,
+.card-book2 {
+  box-shadow: 2px 3px 15px rgb(44, 26, 78);
+}
+
+.cap {
+
+  opacity: 0;
+  transition: 0.2s ease-in-out;
+}
+
+
+.card-book:hover .cap,
+.card-book2:hover .cap {
+
+  opacity: 1;
+
+}
+
+
+/*footer*/
+
+.bd {
+  background-color: #5F2DED;
+
+}
+
+.nn {
+  color: #ffffff;
+}
+
+.ww:hover {
+  color: #5F2DED;
+}
+
+.nour1 {
+  color: rgb(110, 122, 133);
+
+}
+
+.m {
+  background-color: rgb(110, 122, 133);
+}
+
+a {
+  text-decoration: none;
+}
+
+.nour:hover {
+  color: #5F2DED;
+  text-decoration: underline
+}
+
+.color3 {
+  background-color: #170F2F;
+}
+
+.button:hover {
+  background-color: #170F2F;
+}
+
+.button {
+  background-color: #5f2ded;
+}
+
+.color2:hover {
+  background-color: #5F2DED;
+}
+
+.h {
+  color: #5F2DED;
+}
+

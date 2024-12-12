@@ -1,0 +1,522 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.body {
+    overflow-x: hidden;
+    background-color: #f1f1f1;
+}
+
+.cart-shopping span {
+    font-size: 7px;
+    background-color: #F2277E;
+    position: relative;
+    top: -15px;
+}
+.cart-shopping i:hover{
+color: #F2277E;
+}
+.get .btn {
+    background-color: #5F2DED;
+    color: white;
+}
+
+.get .btn:hover {
+    background-color: white;
+    color: #5F2DED;
+    border: 1px solid #5F2DED;
+}
+
+.users i:hover {
+    background-color: #5F2DED;
+    color: white;
+}
+.he {
+    position: fixed;
+}
+.admin-quiz {
+    background-color: #5f2ded;
+    height: auto;
+    position: relative;
+
+}
+
+.admin-quiz button {
+    border: 1px solid white;
+    background-color: #5f2ded;
+}
+
+.admin-quiz button:hover {
+    color: #5f2ded;
+    background-color: white;
+}
+
+.admin-quiz button a {
+    color: white;
+}
+
+.admin-quiz button:hover a {
+    color: #5f2ded;
+}
+
+
+.menu a {
+    color: grey;
+}
+
+.menu a:hover {
+    color: #5f2ded;
+}
+
+.menu .span {
+    background-color: #5f2ded;
+    color: white;
+    font-size: 10px;
+    font-weight: bold;
+}
+
+.fs {
+    font-weight: bold;
+    font-family: 'Courier New', Courier, monospace;
+}
+
+.fa-chevron-3 {
+    border-radius: 5px 5px 0 0;
+}
+
+.fa-chevron-2 a {
+    color: black;
+}
+
+.fa-chevron-2:hover a {
+    background-color: blue;
+    color: white;
+}
+
+.btns .btns-1 {
+    background-color: #5F2DED;
+    color: white;
+    font-weight: bold;
+    font-size: 14px;
+}
+
+.btns .btns-1:hover {
+    background: white;
+    border: 1px solid #5F2DED;
+    color: #5F2DED;
+}
+
+.btns .btns-2 {
+    color: white;
+    background-color: #F2277E;
+    font-weight: bold;
+    font-size: 14px;
+}
+
+.btns .btns-2:hover {
+    background-color: white;
+    border: 1px solid #F2277E;
+    color: #F2277E;
+}
+
+.Micle {
+    background-color: #f1f1f1;
+}
+.ta {
+    background-color: rgb(241, 240, 240);
+  }
+  .kal {
+    overflow: scroll;
+  }
+  .run {
+    background-color: #1EC902;
+    font-size: 13px;
+    font-weight: bold;
+  }  
+  .tim {
+    background-color: #5F2DED;
+    font-size: 13px;
+    font-weight: bold;
+  }
+  .cacs {
+    font-weight: bold;
+    font-size: 13px;
+    background-color: #F2277E;
+  }
+  .coi {
+    font-size: 13px;
+    background-color: #0dcaf0;
+    font-weight: bold;
+  }
+  .nav-item-1 {
+    position: relative;
+    padding: 0 15px;
+  }
+  
+  .nav-item-1::after {
+    content: "";
+    position: absolute;
+    top: 50%;
+    right: 0;
+    width: 2px;
+    height: 18px;
+    background-color: grey;
+    transform: translateY(-50%);
+  }
+  
+  .nav-item-1:last-child::after {
+    display: none;
+  }
+  .all{
+    font-size: 12px;
+  }
+  
+.hover-line-2 {
+    position: relative;
+    overflow: hidden;
+  }
+  
+  .hover-line-2::before {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 0;
+    height: 2px;
+    background-color: #5f2ded;
+    transition: width 0.4s ease;
+  }
+  
+  .hover-line-2:hover::before,
+  .hover-line-2.active::before {
+    width: 100%;
+  }
+  
+  .hover-line-2 button.active {
+    color: #5f2ded;
+  }
+  
+  .hover-line-2 button {
+    display: block;
+    color: black;
+    font-weight: bold;
+  
+  }
+  
+  .hover-line-2 button:hover {
+    color: #5f2ded;
+  }
+  
+
+#PASSWORD ,#SOCIAL-ICON{
+  display: none;
+}
+
+#PROFILE {
+    display: block;
+}
+
+
+  #PROFILE form label {
+    font-size: 14px;
+  }
+  
+  #PROFILE form input {
+    font-size: 14px;
+  }
+  
+  #PROFILE .btn {
+    background-color: #5F2DED;
+  
+  }
+  
+  #PROFILE .btn:hover {
+    background-color: white;
+    border: 1px solid #5F2DED;
+  }
+  #PROFILE .btn:hover a{
+   color: #5F2DED;
+  }
+  
+  #PROFILE .btn a {
+    color: white;
+  }
+  #PASSWORD form label {
+    font-size: 14px;
+  }
+  #PASSWORD form input {
+    font-size: 14px;
+  }
+  #PASSWORD .btn {
+    background-color: #5F2DED;
+  
+  }
+  #PASSWORD .btn:hover {
+    background-color: white;
+    border: 1px solid #5F2DED;
+  }
+  #PASSWORD .btn:hover a{
+    color: #5F2DED;
+    
+   }
+   
+   #PASSWORD  .btn a {
+     color: white;
+   }
+   #SOCIAL-ICON form label {
+    font-size: 14px;
+  }
+  #SOCIAL-ICON form input {
+    font-size: 14px;
+  }
+  #SOCIAL-ICON .btn {
+    background-color: #5F2DED;
+  
+  }
+  #SOCIAL-ICON .btn:hover {
+    background-color: white;
+    border: 1px solid #5F2DED;
+  }
+  #SOCIAL-ICON .btn:hover a{
+    color: #5F2DED;
+   }
+   
+   #SOCIAL-ICON .btn a {
+     color: white;
+   }
+  
+
+   .card-css {
+    overflow: hidden;
+  
+  }
+  
+  
+  .card-css a i {
+    background-color: #d0caca;
+    transition: background-color 0.3s ease;
+  }
+  
+  .card-css a i:hover {
+    background-color: #5f2ded;
+  }
+  
+  .card-css-1,
+  .card-css-2,
+  .card-css-3,
+  .card-css-4,
+  .card-css-5,
+  .card-css-6 {
+    z-index: 1;
+  }
+  
+  .card-css-2 p {
+    font-size: 12px;
+  }
+  .card-css-3 p {
+    background-color: #f2277e;
+    font-size: 12px;
+  }
+  .card-css-4 p {
+    background-color: rgb(3, 202, 3);
+    font-size: 12px;
+  }
+  .zoom {
+    position: relative;
+    overflow: hidden;
+  
+  }
+ .card-body .mi{
+    color: #000;
+  }
+.card-body  .mi:hover{
+    color: #5f2ded;
+  }
+.card-css .zoom img {
+  width: 100%;
+  height: 150px;
+  transition: transform 0.4s ease;
+  border-radius: 10px;
+}
+
+.card-css .zoom img:hover {
+  transform: scale(1.1);
+}
+
+.card-body button:hover {
+  color: white;
+}
+
+.card-title p i,
+.card-body p {
+  color: #5f2ded;
+}
+
+.cards img {
+  width: 33px;
+  height: 33px;
+}
+
+.cards {
+  border-top: 2px solid #f0f0f5;
+}
+.cards a{
+  color: black;
+}
+.cards a:hover {
+  color: #5f2ded;
+}
+.sts{
+  color: #5F2DED;
+}
+#PUBLISH ,#RECEIVED ,#RECEIVED{
+  display: block;
+}
+#PENDING ,#DRAFT ,#GIVEN{
+  display: none;
+}
+
+   .bg-mor {
+    background: #E7DEFF;
+  }
+  
+  .color-dark {
+  
+    color: #170F2F;
+  }
+  
+  
+  .shadow-right {
+    box-shadow: 20px 0 10px #E5E5E5;
+  }
+  
+  .shadow-left {
+    box-shadow: -15px 0px 5px #E5E5E5;
+  }
+  
+  .bg-secon {
+    background: #170F2F;
+  }
+  
+  .footer-hover {
+  
+    color: #9FA2CE;
+  }
+  
+  .p-secon {
+    color: #9FA2CE;
+  }
+  
+  .footer-hover:hover {
+  
+    color: #B13BFF;
+    text-decoration: underline;
+  }
+  
+  .img-text {
+    /* color: #ffffff; */
+    color: #eeeeee;
+  }
+  
+  .img-text:hover {
+  
+    color: #B13BFF;
+    text-decoration: underline;
+  }
+  
+  .bg-icon-footer {
+    background: #202942;
+  }
+  
+  .icon-footer-hover {
+  
+    color: #6A7C92;
+  }
+  
+  .icon-footer-hover:hover {
+  
+    color: rgb(255, 255, 255);
+  }
+  
+  footer .btn {
+    background-color: #5F2DED;
+  }
+  
+  footer .btn:hover {
+    background-color: #170F2F;
+  }   
+
+.card-dash .card-dash-img {
+height: 65px;
+width: 65px;
+}
+.card-dash-2 img {
+  width: 130px;
+}
+.card-dash-3 img{
+  width: 200px;
+
+}
+.card-dash p{
+  font-size: 13px;
+  color: black;
+}
+.card-dash a{
+  color: grey;
+}
+.card-dash a:hover{
+  color: #5F2DED;
+}
+.card-dash-2 a{
+  color: grey;
+}
+.card-dash-2 a:hover{
+  color: #5F2DED;
+}
+.card-dash-3 a{
+  color: grey;
+}
+.card-dash-3 a:hover{
+  color: #5F2DED;
+}
+.card-dash-4 img{
+  width: 50px;
+}
+.over{
+  height: 500px;
+  overflow-y: auto;
+}
+.yil i{
+  color:#5F2DED;
+  font-size: 12px;
+}
+.chats{
+  background-color:rgb(4, 51, 52) ;
+  color: white;
+  border-radius: 10px 10px 0 0;
+
+}
+.over-1{
+  height: 560px;
+  overflow-y: auto;
+}
+.over-1 img ,.ov img{
+  height: 45px;
+width: 45px;
+}
+.sp{
+  position: absolute;
+  left: 50px;
+ top: 43px;
+  width: 15px;
+  height: 15px;
+  border-radius: 50%;
+  border: 3px solid white;
+  z-index: 1;
+  background:#5F2DED;
+}
+.cl i{
+  background-color: #5f2ded;
+}
