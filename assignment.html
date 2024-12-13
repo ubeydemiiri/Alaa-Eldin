@@ -1,0 +1,1046 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+  <link rel="stylesheet" href="/style.css">
+
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+    integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+    integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+
+<body id="bodyId">
+  <div>
+    <div class="col-md-12">
+      <div>
+        <i type="button" class="fa-solid fa-moon text-dark fs-3 ms-5" onclick="Dark() "></i>
+        <i class="fa-regular fa-moon fs-3 ms-1" type="button" onclick="White()"></i>
+
+      </div>
+    </div>
+
+  </div>
+
+  <div class="sticky-top">
+
+
+    <!------Top bar-------->
+
+
+    <div class=" bg-white   py-2 d-none d-md-block ">
+        <div class="container-fluid d-flex justify-content-between">
+
+            <span>Call Us: +0090 555-149-7053 - Mail Us: Itcroc@mail.com</span>
+            <span class="d-flex gap-2 social">
+                <span>
+                    <svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" fill="currentColor"
+                        class="bi bi-geo-alt-fill me-1" viewBox="0 0 16 16">
+                        <path fill="#5f2ded"
+                            d="M8 16s6-5.686 6-10A6 6 0 0 0 2 6c0 4.314 6 10 6 10m0-7a3 3 0 1 1 0-6 3 3 0 0 1 0 6" />
+                    </svg>
+                    684 West College St. Sun City, USA</span>
+
+                <span class="d-flex gap-2">
+                    <a href="#">
+                        <svg style="width: 20px; height: 20px" xmlns="http://www.w3.org/2000/svg"
+                            viewBox="0 0 320 512">
+                            <!--!Font Awesome Free 6.6.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.-->
+                            <path fill="#ffffff"
+                                d="M80 299.3V512H196V299.3h86.5l18-97.8H196V166.9c0-51.7 20.3-71.5 72.7-71.5c16.3 0 29.4 .4 37 1.2V7.9C291.4 4 256.4 0 236.2 0C129.3 0 80 50.5 80 159.4v42.1H14v97.8H80z" />
+                        </svg>
+                    </a>
+                    <a href="#">
+                        <svg style="width: 20px; height: 20px" xmlns="http://www.w3.org/2000/svg"
+                            viewBox="0 0 512 512">
+                            <!--!Font Awesome Free 6.6.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.-->
+                            <path fill="#ffffff"
+                                d="M459.4 151.7c.3 4.5 .3 9.1 .3 13.6 0 138.7-105.6 298.6-298.6 298.6-59.5 0-114.7-17.2-161.1-47.1 8.4 1 16.6 1.3 25.3 1.3 49.1 0 94.2-16.6 130.3-44.8-46.1-1-84.8-31.2-98.1-72.8 6.5 1 13 1.6 19.8 1.6 9.4 0 18.8-1.3 27.6-3.6-48.1-9.7-84.1-52-84.1-103v-1.3c14 7.8 30.2 12.7 47.4 13.3-28.3-18.8-46.8-51-46.8-87.4 0-19.5 5.2-37.4 14.3-53 51.7 63.7 129.3 105.3 216.4 109.8-1.6-7.8-2.6-15.9-2.6-24 0-57.8 46.8-104.9 104.9-104.9 30.2 0 57.5 12.7 76.7 33.1 23.7-4.5 46.5-13.3 66.6-25.3-7.8 24.4-24.4 44.8-46.1 57.8 21.1-2.3 41.6-8.1 60.4-16.2-14.3 20.8-32.2 39.3-52.6 54.3z" />
+                        </svg>
+                    </a>
+                    <a href="#">
+                        <svg style="width: 20px; height: 20px" xmlns="http://www.w3.org/2000/svg"
+                            viewBox="0 0 448 512">
+                            <!--!Font Awesome Free 6.6.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.-->
+                            <path fill="#ffffff"
+                                d="M224.1 141c-63.6 0-114.9 51.3-114.9 114.9s51.3 114.9 114.9 114.9S339 319.5 339 255.9 287.7 141 224.1 141zm0 189.6c-41.1 0-74.7-33.5-74.7-74.7s33.5-74.7 74.7-74.7 74.7 33.5 74.7 74.7-33.6 74.7-74.7 74.7zm146.4-194.3c0 14.9-12 26.8-26.8 26.8-14.9 0-26.8-12-26.8-26.8s12-26.8 26.8-26.8 26.8 12 26.8 26.8zm76.1 27.2c-1.7-35.9-9.9-67.7-36.2-93.9-26.2-26.2-58-34.4-93.9-36.2-37-2.1-147.9-2.1-184.9 0-35.8 1.7-67.6 9.9-93.9 36.1s-34.4 58-36.2 93.9c-2.1 37-2.1 147.9 0 184.9 1.7 35.9 9.9 67.7 36.2 93.9s58 34.4 93.9 36.2c37 2.1 147.9 2.1 184.9 0 35.9-1.7 67.7-9.9 93.9-36.2 26.2-26.2 34.4-58 36.2-93.9 2.1-37 2.1-147.8 0-184.8zM398.8 388c-7.8 19.6-22.9 34.7-42.6 42.6-29.5 11.7-99.5 9-132.1 9s-102.7 2.6-132.1-9c-19.6-7.8-34.7-22.9-42.6-42.6-11.7-29.5-9-99.5-9-132.1s-2.6-102.7 9-132.1c7.8-19.6 22.9-34.7 42.6-42.6 29.5-11.7 99.5-9 132.1-9s102.7-2.6 132.1 9c19.6 7.8 34.7 22.9 42.6 42.6 11.7 29.5 9 99.5 9 132.1s2.7 102.7-9 132.1z" />
+                        </svg>
+                    </a>
+                    <a href="#">
+                        <svg style="width: 20px; height: 20px" xmlns="http://www.w3.org/2000/svg"
+                            viewBox="0 0 576 512">
+                            <!--!Font Awesome Free 6.6.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.-->
+                            <path fill="#ffffff"
+                                d="M549.7 124.1c-6.3-23.7-24.8-42.3-48.3-48.6C458.8 64 288 64 288 64S117.2 64 74.6 75.5c-23.5 6.3-42 24.9-48.3 48.6-11.4 42.9-11.4 132.3-11.4 132.3s0 89.4 11.4 132.3c6.3 23.7 24.8 41.5 48.3 47.8C117.2 448 288 448 288 448s170.8 0 213.4-11.5c23.5-6.3 42-24.2 48.3-47.8 11.4-42.9 11.4-132.3 11.4-132.3s0-89.4-11.4-132.3zm-317.5 213.5V175.2l142.7 81.2-142.7 81.2z" />
+                        </svg>
+                    </a>
+                </span>
+            </span>
+        </div>
+    </div>
+    <!--------End top bar--------->
+
+    <!------Navbar---------->
+    <div class="navbar  bg-white  navbar-expand-lg   py-4">
+        <div class="container">
+            <a href="./index.html"><img loading="lazy" src="./img/logo/logo_1.png" alt="logo" /></a>
+
+            <div class="offcanvas offcanvas-end   ps-3" id="navbarNav"
+                style="margin-left: 130px;  width: 200px">
+                <ul class="navbar-nav">
+                    <li class="nav-item dropdown m-2">
+                        <a href="" class="nav-link dropdown-toggle" role="button" data-bs-toggle="dropdown"
+                            data-bs-auto-close="outside">Home</a>
+                        <ul class="dropdown-menu">
+                            <li><a href="./index.html" class="dropdown-item">Home-1</a></li>
+                            <li><a href="./home.html" class="dropdown-item">home-2</a></li>
+                        </ul>
+                    </li>
+
+                    <li class="nav-item dropdown m-2">
+                        <a href="" class="nav-link dropdown-toggle" role="button" data-bs-toggle="dropdown"
+                            data-bs-auto-close="outside">Blog</a>
+                        <ul class="dropdown-menu">
+                            <li><a href="./blogdetails.html" class="dropdown-item">Blog-details</a></li>
+                            <li><a href="./blogdetails.html" class="dropdown-item">Blog-details(Dark)</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item dropdown m-2">
+                        <a href="" class="nav-link dropdown-toggle" role="button" data-bs-toggle="dropdown"
+                            data-bs-auto-close="outside">buying</a>
+                        <ul class="dropdown-menu">
+                            <li><a href="./shop.html" class="dropdown-item">Shop</a></li>
+                            <li><a href="./productdetails.html" class="dropdown-item">Product Detail</a></li>
+
+                        </ul>
+                    </li>
+                    <li class="nav-item dropdown m-2">
+                        <a href="" class="nav-link dropdown-toggle" role="button" data-bs-toggle="dropdown"
+                            data-bs-auto-close="outside">Admin</a>
+                        <ul class="dropdown-menu">
+                            <li><a href="./admin-course.html" class="dropdown-item">Admin</a></li>
+                            <li><a href="./admin-dashboard.html" class="dropdown-item">admin-dashboard</a></li>
+                            <li><a href="./admin-message.html" class="dropdown-item">admin-message</a></li>
+                            <li><a href="./admin-profile.html" class="dropdown-item">admin-profile</a></li>
+                            <li><a href="./admin-quiz-attempts.html"
+                                    class="dropdown-item">admin-quiz-attempts</a>
+                            </li>
+                            <li><a href="./admin-reviews.html" class="dropdown-item">admin-reviews</a></li>
+                            <li><a href="./admin-settings.html" class="dropdown-item">admin-settings</a></li>
+
+
+                        </ul>
+                    </li>
+                    <li class="nav-item dropdown m-2">
+                        <a href="" class="nav-link dropdown-toggle" role="button" data-bs-toggle="dropdown"
+                            data-bs-auto-close="outside">Courses</a>
+                        <ul class="dropdown-menu">
+                            <li><a href="./courses.html" class="dropdown-item">Courses</a></li>
+                            <li><a href="./course-dark.html" class="dropdown-item">Courses(Dark)</a></li>
+                            <li><a href="./course-grid.html" class="dropdown-item">Courses-grid</a></li>
+                            <li><a href="./course-grid-dark.html" class="dropdown-item">Courses-grid(Dark)</a>
+                            </li>
+                            <li><a href="./course-list.html" class="dropdown-item">Courses-list</a></li>
+                            <li><a href="./course-list-dark.html" class="dropdown-item">Courses-list(Dark)</a>
+                            </li>
+                            <li><a href="./courseMaterials.html" class="dropdown-item">course-materials</a></li>
+                            <li><a href="./error.html" class="dropdown-item">Eror</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item dropdown m-2">
+                        <a href="" class="nav-link dropdown-toggle" role="button" data-bs-toggle="dropdown"
+                            data-bs-auto-close="outside">Pages</a>
+                        <ul class="dropdown-menu">
+                            <li><a href="./assignment.html" class="dropdown-item">ِAssignmet</a></li>
+                            <li><a href="./instructor.html" class="dropdown-item">Instructor</a></li>
+                            <li><a href="./instructordetails.html" class="dropdown-item">instructor-details</a>
+                            </li>
+                            <li><a href="./lesson.html" class="dropdown-item">lesson</a></li>
+                            <li><a href="./lesson1.html" class="dropdown-item">Lesson 1</a></li>
+                            <li><a href="./lesson2.html" class="dropdown-item">Lesson 2</a></li>
+                            <li><a href="./lesson-course-meterials.html"
+                                    class="dropdown-item">lesson-course-meterials</a></li>
+
+                            <li><a href="./preview.html" class="dropdown-item">Preview</a></li>
+                            <li><a href="./productdetails.html" class="dropdown-item">productdetails</a></li>
+                        </ul>
+                    </li>
+
+
+
+                    <hr class="d-md-none d-block" />
+
+                    <div class="d-md-none d-block mt-5" style="margin-left: 80px">
+                        <i class="p-3 fa-brands fa-twitter fa-lg sky"></i>
+
+                        <i class="p-3 fa-brands fa-facebook-f fa-lg sky"></i>
+
+                        <i class="p-3 fa-brands fa-skype fa-lg sky"></i>
+
+                        <i class="p-3 fa-brands fa-linkedin fa-lg sky"></i>
+                    </div>
+                </ul>
+            </div>
+            <div class="d-flex">
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor"
+                    class="bi bi-person-fill d-none d-md-block" viewBox="0 0 16 16">
+                    <path d="M3 14s-1 0-1-1 1-4 6-4 6 3 6 4-1 1-1 1zm5-6a3 3 0 1 0 0-6 3 3 0 0 0 0 6" />
+                </svg>
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor"
+                    class="bi bi-cart4 me-2" viewBox="0 0 16 16">
+                    <path
+                        d="M0 2.5A.5.5 0 0 1 .5 2H2a.5.5 0 0 1 .485.379L2.89 4H14.5a.5.5 0 0 1 .485.621l-1.5 6A.5.5 0 0 1 13 11H4a.5.5 0 0 1-.485-.379L1.61 3H.5a.5.5 0 0 1-.5-.5M3.14 5l.5 2H5V5zM6 5v2h2V5zm3 0v2h2V5zm3 0v2h1.36l.5-2zm1.11 3H12v2h.61zM11 8H9v2h2zM8 8H6v2h2zM5 8H3.89l.5 2H5zm0 5a1 1 0 1 0 0 2 1 1 0 0 0 0-2m-2 1a2 2 0 1 1 4 0 2 2 0 0 1-4 0m9-1a1 1 0 1 0 0 2 1 1 0 0 0 0-2m-2 1a2 2 0 1 1 4 0 2 2 0 0 1-4 0" />
+                </svg>
+
+                <form action="" class="d-flex">
+                    <button class="btn btn-outline-primary d-none d-md-block">
+                        Get Start
+                    </button>
+                </form>
+
+                <buttom class="navbar-toggler me-5" type="buttom" data-bs-toggle="offcanvas"
+                    data-bs-target="#navbarNav">
+                    <span class="navbar-toggler-icon"></span>
+                </buttom>
+            </div>
+        </div>
+    </div>
+
+    <!-------End navbar----------->
+</div>
+  <!--  -->
+  <!-- LOADER -->
+  <div class="loader"><i style="position: relative; left: 50px; font-size: 30px;" class="fa-solid fa-book"></i></div>
+
+  <!--Header Start -->
+  <header class="header" style="background-color: #f5f5fe; padding: 200px 0; text-align: center;">
+    <h3 class="h1 text-dark fs-1 fw-bold">Featured Courses</h3>
+    <div class="breadcrumb-holder">
+      <nav class="" style="--bs-breadcrumb-divider: '⟩'">
+        <ol class="breadcrumb text-bg-transparant d-inline-flex align-items-center p-2">
+          <li class="breadcrumb-item">
+            <a class="smal text-decoration-none text-dark fw-bold" href="./index.html">Home</a>
+          </li>
+          <li class="breadcrumb-item">
+            <a class="smal text-decoration-none text-dark fw-bold" href="#">Featured Course</a>
+          </li>
+
+        </ol>
+      </nav>
+    </div>
+    <div class="Header_icon position-relative">
+      <img loading="lazy" class=" Header_icon-img Header_icon-img1 image-rotative"
+        src="./img/img/herobanner/herobanner__1.png" alt="photo">
+      <img loading="lazy" class=" Header_icon-img Header_icon-img2" src="./img/img/herobanner/herobanner__2.png"
+        alt="photo">
+      <img loading="lazy" class=" Header_icon-img Header_icon-img3" src="./img/img/herobanner/herobanner__3.png"
+        alt="photo">
+      <img loading="lazy" class=" Header_icon-img Header_icon-img4" src="./img/img/herobanner/herobanner__5.png"
+        alt="photo">
+    </div>
+  </header>
+
+  <!--Header End -->
+
+  <div class="row mt-5 justify-content-around">
+    <div class="col-md-4">
+      <div class="row">
+        <div class="col-md-12">
+          <div>
+            <div class="accordion">
+              <div class="accordion-item">
+                <div class="accordion-header">
+                  <button class="accordion-button" data-bs-toggle="collapse" data-bs-target="#epison-body1">
+                    <span class="">Lesson #01</span>
+                  </button>
+                  <div class="accordion-collapse collapse show" id="epison-body1">
+                    <div class="accordion-body">
+                      <div class="d-flex justify-content-between border-bottom w-100">
+                        <div>
+                          <a class="text-dark text-decoration-none" href="">
+                            <i class="fa-solid fa-play"></i>
+                            <span><span class="fw-bold"> Course Intro</span>
+                          </a>
+                          </span>
+                        </div>
+                        <div>
+
+                          <span class="me-2"> 3.27 </span>
+                          <a href="" class="border  text-decoration-none"
+                            style="background-color:#5f2ded ; color: white;">Preview <i
+                              class="fa-regular fa-eye"></i></a>
+                        </div>
+                      </div>
+
+
+
+                      <div class="d-flex justify-content-between border-bottom">
+                        <div>
+                          <a class="text-dark text-decoration-none" href="">
+                            <i class="fa-solid fa-play"></i>
+                            <span><span class="fw-bold"> Course Outline</span>
+                          </a>
+                          </span>
+                        </div>
+
+
+                        <div>
+
+                          <span class="me-2"> 5.00 </span>
+                          <a href="" class="border  text-decoration-none"
+                            style="background-color:#5f2ded ; color: white;">Preview <i
+                              class="fa-regular fa-eye"></i></a>
+                        </div>
+
+                      </div>
+
+
+
+
+                      <div class="d-flex justify-content-between border-bottom">
+                        <div>
+                          <a class="text-dark text-decoration-none" href="">
+                            <i class="fa-regular fa-file"></i>
+                            <span><span class="fw-bold"> Course Materials</span>
+                          </a>
+                          </span>
+                        </div>
+
+                      </div>
+
+
+
+
+                      <div class="d-flex justify-content-between border-bottom">
+                        <div>
+                          <a class="text-dark text-decoration-none" href="">
+                            <i class="fa-solid fa-volume-high"></i>
+                            <span><span class="fw-bold"> Summer Quiz</span>
+                          </a>
+                          </span>
+                        </div>
+
+                      </div>
+
+
+
+                      <div class="d-flex justify-content-between border-bottom">
+                        <div>
+                          <a class="text-dark text-decoration-none" href="">
+                            <i class="fa-regular fa-file"></i>
+                            <span><span class="fw-bold"> Assignment</span>
+                          </a>
+                          </span>
+                        </div>
+
+                      </div>
+
+
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+
+          </div>
+        </div>
+
+
+
+
+        <div class="col-md-12 mt-3">
+          <div>
+            <div class="accordion">
+              <div class="accordion-item">
+                <div class="accordion-header">
+                  <button class="accordion-button" data-bs-toggle="collapse" data-bs-target="#epison-body2">
+                    <span class="">Lesson #02</span>
+                  </button>
+                  <div class="accordion-collapse collapse" id="epison-body2">
+                    <div class="accordion-body">
+                      <div class="d-flex justify-content-between border-bottom w-100">
+                        <div>
+                          <a class="text-dark text-decoration-none" href="">
+                            <i class="fa-solid fa-play"></i>
+                            <span><span class="fw-bold"> Course Intro</span>
+                          </a>
+                          </span>
+                        </div>
+                        <div>
+
+                          <span class="me-2"> 3.27 </span>
+                          <a href="" class="border  text-decoration-none"
+                            style="background-color:#5f2ded ; color: white;">Preview <i
+                              class="fa-regular fa-eye"></i></a>
+                        </div>
+                      </div>
+
+
+
+                      <div class="d-flex justify-content-between border-bottom">
+                        <div>
+                          <a class="text-dark text-decoration-none" href="">
+                            <i class="fa-solid fa-play"></i>
+                            <span><span class="fw-bold"> Course Outline</span>
+                          </a>
+                          </span>
+                        </div>
+
+
+                        <div>
+
+                          <span class="me-2"> 5.00 </span>
+                          <a href="" class="border  text-decoration-none"
+                            style="background-color:#5f2ded ; color: white;">Preview <i
+                              class="fa-regular fa-eye"></i></a>
+                        </div>
+
+                      </div>
+
+                      <div class="d-flex justify-content-between border-bottom">
+                        <div>
+                          <a class="text-dark text-decoration-none" href="">
+                            <i class="fa-solid fa-play"></i>
+                            <span><span class="fw-bold"> Course Outline</span>
+                          </a>
+                          </span>
+                        </div>
+
+
+                        <div>
+
+                          <span class="me-2"> 7.00 </span>
+                          <a href="" class="border  text-decoration-none"
+                            style="background-color:#5f2ded ; color: white;">Preview <i
+                              class="fa-regular fa-eye"></i></a>
+                        </div>
+
+                      </div>
+
+
+                      <div class="d-flex justify-content-between border-bottom">
+                        <div>
+                          <a class="text-dark text-decoration-none" href="">
+                            <i class="fa-regular fa-file"></i>
+                            <span><span class="fw-bold"> Course Materials</span>
+                          </a>
+                          </span>
+                        </div>
+
+                      </div>
+
+
+
+
+                      <div class="d-flex justify-content-between border-bottom">
+                        <div>
+                          <a class="text-dark text-decoration-none" href="">
+                            <i class="fa-solid fa-volume-high"></i>
+                            <span><span class="fw-bold"> Summer Quiz</span>
+                          </a>
+                          </span>
+                        </div>
+
+                      </div>
+
+
+
+                      <div class="d-flex justify-content-between border-bottom">
+                        <div>
+                          <a class="text-dark text-decoration-none" href="">
+                            <i class="fa-regular fa-file"></i>
+                            <span><span class="fw-bold"> Assignment</span>
+                          </a>
+                          </span>
+                        </div>
+
+                      </div>
+
+
+
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+
+          </div>
+        </div>
+
+
+
+
+        <div class="col-md-12 mt-3">
+          <div>
+            <div class="accordion">
+              <div class="accordion-item">
+                <div class="accordion-header">
+                  <button class="accordion-button" data-bs-toggle="collapse" data-bs-target="#epison-body3">
+                    <span class="">Lesson #03</span>
+                  </button>
+                  <div class="accordion-collapse collapse" id="epison-body3">
+                    <div class="accordion-body">
+                      <div class="d-flex justify-content-between border-bottom w-100">
+                        <div>
+                          <a class="text-dark text-decoration-none" href="">
+                            <i class="fa-solid fa-play"></i>
+                            <span><span class="fw-bold"> Course Intro</span>
+                          </a>
+                          </span>
+                        </div>
+                        <div>
+
+                          <span class="me-2"> 3.27 </span>
+                          <a href="" class="border  text-decoration-none"
+                            style="background-color:#5f2ded ; color: white;">Preview <i
+                              class="fa-regular fa-eye"></i></a>
+                        </div>
+                      </div>
+
+
+
+                      <div class="d-flex justify-content-between border-bottom">
+                        <div>
+                          <a class="text-dark text-decoration-none" href="">
+                            <i class="fa-solid fa-play"></i>
+                            <span><span class="fw-bold"> Course Outline</span>
+                          </a>
+                          </span>
+                        </div>
+
+
+                        <div>
+
+                          <span class="me-2"> 5.00 </span>
+                          <a href="" class="border  text-decoration-none"
+                            style="background-color:#5f2ded ; color: white;">Preview <i
+                              class="fa-regular fa-eye"></i></a>
+                        </div>
+
+                      </div>
+
+
+
+
+                      <div class="d-flex justify-content-between border-bottom">
+                        <div>
+                          <a class="text-dark text-decoration-none" href="">
+                            <i class="fa-solid fa-play"></i>
+                            <span><span class="fw-bold"> Course Outline</span>
+                          </a>
+                          </span>
+                        </div>
+
+
+                        <div>
+
+                          <span class="me-2"> 7.00 </span>
+                          <a href="" class="border  text-decoration-none"
+                            style="background-color:#5f2ded ; color: white;">Preview <i
+                              class="fa-regular fa-eye"></i></a>
+                        </div>
+
+                      </div>
+
+
+
+
+                      <div class="d-flex justify-content-between border-bottom">
+                        <div>
+                          <a class="text-dark text-decoration-none" href="">
+                            <i class="fa-regular fa-file"></i>
+                            <span><span class="fw-bold"> Course Materials</span>
+                          </a>
+                          </span>
+                        </div>
+
+                      </div>
+
+
+
+
+                      <div class="d-flex justify-content-between border-bottom">
+                        <div>
+                          <a class="text-dark text-decoration-none" href="">
+                            <i class="fa-solid fa-volume-high"></i>
+                            <span><span class="fw-bold"> Summer Quiz</span>
+                          </a>
+                          </span>
+                        </div>
+
+                      </div>
+
+
+
+                      <div class="d-flex justify-content-between border-bottom">
+                        <div>
+                          <a class="text-dark text-decoration-none" href="">
+                            <i class="fa-regular fa-file"></i>
+                            <span><span class="fw-bold"> Assignment</span>
+                          </a>
+                          </span>
+                        </div>
+
+                      </div>
+
+
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+
+          </div>
+        </div>
+
+
+
+
+
+
+        <div class="col-md-12 mt-3">
+          <div>
+            <div class="accordion">
+              <div class="accordion-item">
+                <div class="accordion-header">
+                  <button class="accordion-button" data-bs-toggle="collapse" data-bs-target="#epison-body4">
+                    <span class="">Lesson #01</span>
+                  </button>
+                  <div class="accordion-collapse collapse" id="epison-body4">
+                    <div class="accordion-body">
+                      <div class="d-flex justify-content-between border-bottom w-100">
+                        <div>
+                          <a class="text-dark text-decoration-none" href="">
+                            <i class="fa-solid fa-play"></i>
+                            <span><span class="fw-bold"> Course Intro</span>
+                          </a>
+                          </span>
+                        </div>
+                        <div>
+
+                          <span class="me-2"> 3.27 </span>
+                          <a href="" class="border  text-decoration-none"
+                            style="background-color:#5f2ded ; color: white;">Preview <i
+                              class="fa-regular fa-eye"></i></a>
+                        </div>
+                      </div>
+
+
+
+                      <div class="d-flex justify-content-between border-bottom">
+                        <div>
+                          <a class="text-dark text-decoration-none" href="">
+                            <i class="fa-solid fa-play"></i>
+                            <span><span class="fw-bold"> Course Outline</span>
+                          </a>
+                          </span>
+                        </div>
+
+
+                        <div>
+
+                          <span class="me-2"> 5.00 </span>
+                          <a href="" class="border  text-decoration-none"
+                            style="background-color:#5f2ded ; color: white;">Preview <i
+                              class="fa-regular fa-eye"></i></a>
+                        </div>
+
+                      </div>
+
+
+
+
+                      <div class="d-flex justify-content-between border-bottom">
+                        <div>
+                          <a class="text-dark text-decoration-none" href="">
+                            <i class="fa-solid fa-play"></i>
+                            <span><span class="fw-bold"> Course Outline</span>
+                          </a>
+                          </span>
+                        </div>
+
+
+                        <div>
+
+                          <span class="me-2"> 7.00 </span>
+                          <a href="" class="border  text-decoration-none"
+                            style="background-color:#5f2ded ; color: white;">Preview <i
+                              class="fa-regular fa-eye"></i></a>
+                        </div>
+
+                      </div>
+
+
+
+
+                      <div class="d-flex justify-content-between border-bottom">
+                        <div>
+                          <a class="text-dark text-decoration-none" href="">
+                            <i class="fa-regular fa-file"></i>
+                            <span><span class="fw-bold"> Course Materials</span>
+                          </a>
+                          </span>
+                        </div>
+
+                      </div>
+
+
+
+
+                      <div class="d-flex justify-content-between border-bottom">
+                        <div>
+                          <a class="text-dark text-decoration-none" href="">
+                            <i class="fa-solid fa-volume-high"></i>
+                            <span><span class="fw-bold"> Summer Quiz</span>
+                          </a>
+                          </span>
+                        </div>
+
+                      </div>
+
+
+
+                      <div class="d-flex justify-content-between border-bottom">
+                        <div>
+                          <a class="text-dark text-decoration-none" href="">
+                            <i class="fa-regular fa-file"></i>
+                            <span><span class="fw-bold"> Assignment</span>
+                          </a>
+                          </span>
+                        </div>
+
+                      </div>
+
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+
+          </div>
+        </div>
+
+
+
+      </div>
+    </div>
+
+    <div class="col-md-7">
+
+      <h2 class="border-bottom mb-4">Latest Assignment lists</h2>
+      <table class="table table-striped ">
+        <tr>
+          <th class="w-25">Assignment Name</th>
+          <th class="w-25">Total Marks</th>
+          <th class="w-25">Total Submit</th>
+          <th class="w-25"></th>
+        </tr>
+        <tr>
+          <th>
+            <span>Write a the 5</span>
+            <p class="text-secondary mt-3">course:
+              <a href="#" class="text-decoration-none text-dark">Fundamentals</a>
+            </p>
+          </th>
+
+          <td class="text-secondary">80</td>
+          <td class="text-secondary">2</td>
+          <td class="">
+            <button class="btn rounded-2  d-flex position-relative" style="--bs-btn-bg:#5f2ded; --bs-btn-hover-bg: white;--bs-btn-hover-color:#5f2ded;--bs-btn-color:white;
+                        --bs-btn-hover-border-color:#5f2ded;
+                        ">
+              <i class="fa-solid fa-download mt-1"></i>Download</button>
+          </td>
+
+        </tr>
+
+        <tr>
+          <th>
+            <span>Write a the 5</span>
+            <p class="text-secondary mt-3">course:
+              <a href="#" class="text-decoration-none text-dark">Fundamentals</a>
+            </p>
+          </th>
+
+          <td class="text-secondary">80</td>
+          <td class="text-secondary">2</td>
+          <td class="">
+            <button class="btn rounded-2  d-flex position-relative" style="--bs-btn-bg:#5f2ded; --bs-btn-hover-bg: white;--bs-btn-hover-color:#5f2ded;--bs-btn-color:white;
+                        --bs-btn-hover-border-color:#5f2ded;
+                        ">
+              <i class="fa-solid fa-download mt-1 "></i>Download</button>
+          </td>
+
+        </tr>
+
+        <tr>
+          <th>
+            <span>Write a the 5</span>
+            <p class="text-secondary mt-3">course:
+              <a href="#" class="text-decoration-none text-dark">Fundamentals</a>
+            </p>
+          </th>
+
+          <td class="text-secondary">80</td>
+          <td class="text-secondary">2</td>
+          <td class="">
+            <button class="btn rounded-2  d-flex position-relative" style="--bs-btn-bg:#5f2ded; --bs-btn-hover-bg: white;--bs-btn-hover-color:#5f2ded;--bs-btn-color:white;
+                        --bs-btn-hover-border-color:#5f2ded;
+                        ">
+              <i class="fa-solid fa-download mt-1 "></i>Download</button>
+          </td>
+
+        </tr>
+
+        <tr>
+          <th>
+            <span>Write a the 5</span>
+            <p class="text-secondary mt-3">course:
+              <a href="#" class="text-decoration-none text-dark">Fundamentals</a>
+            </p>
+          </th>
+
+          <td class="text-secondary">80</td>
+          <td class="text-secondary">2</td>
+          <td class="">
+            <button class="btn rounded-2  d-flex position-relative" style="--bs-btn-bg:#5f2ded; --bs-btn-hover-bg: white;--bs-btn-hover-color:#5f2ded;--bs-btn-color:white;
+                        --bs-btn-hover-border-color:#5f2ded;
+                        ">
+              <i class="fa-solid fa-download mt-1 "></i>Download</button>
+          </td>
+
+        </tr>
+
+      </table>
+
+      <div class="row">
+        <div class="col-md-12">
+          <h2 class="border-bottom mb-4 mt-3">Assignment Submission</h2>
+          <form action="">
+            <label for="" class="form-lable py-3 fs-5 ">Email address</label>
+            <input type="email" placeholder="name@example.com" class="form-control py-2">
+
+          </form>
+
+          <div class="mt-3">
+            <label for="" class="form-lable py-3 fs-5 ">Assignment Content</label>
+            <textarea name="" class="form-control fs-4" cols="10" rows="2"></textarea>
+          </div>
+
+          <div class="mt-3">
+            <label for="" class="form-lable py-3 fs-5 ">Drop file here</label>
+            <input type="file" placeholder="name@example.com" class="form-control py-2">
+            <button class="btn rounded-2  d-flex px-3 mt-4" style="--bs-btn-bg:#5f2ded; --bs-btn-hover-bg: white;--bs-btn-hover-color:#5f2ded;--bs-btn-color:white;
+                    --bs-btn-hover-border-color:#5f2ded;
+                    ">
+              Submit Assignment</button>
+          </div>
+
+
+        </div>
+      </div>
+    </div>
+
+  </div>
+
+
+  <!--start footer-->
+
+  <div class=" color3 pb-5 mt-5" data-aos="fade-up">
+    <div class="row justify-content-center">
+      <div class="col-md-6 mt-5">
+        <div class="text-white">
+          <h1>
+            Still You Need Our <span class="h">Support</span> ?
+          </h1>
+          <p>
+            Don’t wait make a smart & logical quote here. Its pretty easy.
+          </p>
+        </div>
+      </div>
+      <div class="col-md-6 mt-5">
+        <form action="">
+          <div class="input-group">
+            <input type="email" class="form-control mt-3 p-3" placeholder="Enter your email here" />
+            <button type="submit" class="button btn btn-primary mt-3 p-3">
+              Subscribe Now
+            </button>
+          </div>
+        </form>
+      </div>
+
+      <hr class="text-white" />
+      <div class="row justify-content-center mt-5">
+        <div class="col-md-3">
+          <div class="text-white">
+            <h3>About us</h3>
+            <p>
+              orporate clients and leisure travelers has been relying on
+              Groundlink for dependable safe, and professional chauffeured car
+              end service in major cities across World.
+            </p>
+            <div class="row">
+              <div class="col-4">
+                <i class="fa-regular fa-clock fa-1xl bd p-4 m-2" style="color: #f5f5f5">
+                </i>
+              </div>
+              <div class="col-7">
+                <h6>Opening Houres</h6>
+                <span>Mon - Sat(8.00 - 6.00)</span>
+                <span class="d-block"> Sunday - Closed</span>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-3">
+          <h3 class="text-white">Usefull Links</h3>
+          <div class="mt-4 d-flex flex-column ms-2  ">
+            <a href="#" class="mb-2 nour nour1 ">About Us</a>
+            <a href="#" class="mb-2 nour nour1 ">Teachers</a>
+            <a href="#" class="mb-2 nour nour1 ">Partner</a>
+            <a href="#" class="mb-2 nour  nour1">Room-Details</a>
+            <a href="#" class="mb-2 nour nour1">Gallery</a>
+          </div>
+        </div>
+        <div class="col-md-3">
+          <h3 class="text-white">Course</h3>
+          <div class="mt-4 d-flex flex-column">
+            <a href="#" class="mb-2 nour nour1">Ui Ux Design</a>
+            <a href="#" class="mb-2 nour nour1">Web Development
+            </a>
+            <a href="#" class="mb-2 nour nour1">Business Strategy</a>
+            <a href="#" class="mb-2 nour nour1">Softwere Development</a>
+            <a href="#" class="mb-2  nour nour1">Business English</a>
+          </div>
+        </div>
+        <div class="col-md-3">
+          <h3 class="text-white">Recent Post</h3>
+          <a href="#">
+            <div>
+              <img src="./img/footer/footer__1.png" class="img-fluid" alt="" />
+
+              <div class="d-inline-block">
+                <span class="text-secondary">02 Apr 2024</span>
+                <h6 class="nn ww">Best Your Buslness</h6>
+              </div>
+            </div>
+          </a>
+          <a href="#">
+            <div>
+              <img src="./img/footer/footer__2.png" class="img-fluid" alt="" />
+
+              <div class="d-inline-block">
+                <span class="text-secondary">02 Apr 2024</span>
+                <h6 class="nn ww d-flex">keep Your Buslness</h6>
+              </div>
+            </div>
+          </a>
+          <a href="#">
+            <div>
+              <img src="./img/footer/footer__3.png" class="img-fluid" alt="" />
+
+              <div class="d-inline-block">
+                <span class="text-secondary">02 Apr 2024</span>
+                <h6 class="nn ww d-flex">Nice Your Buslness</h6>
+              </div>
+            </div>
+          </a>
+        </div>
+
+        <div class="row justify-content-center">
+          <div class="col-md-3 mt-5">
+            <a href="#">
+              <img class="img-fluid" src="./img/logo/logo_2.png" alt="" />
+            </a>
+          </div>
+          <div class="col-md-6 mt-5 ">
+            <div>
+              <p class="text-white">
+                copyright &copy; <span class="h">2024</span> by
+                alaa eldin alahallak. All Rights Reserved.
+              </p>
+            </div>
+          </div>
+
+          <div class="col-md-3 mt-5">
+            <div>
+              <a href="#">
+                <i class="p-3 color2 fa-brands fa-twitter fa-lg m" style="color: #ffffff"></i></a>
+              <a href="#">
+                <i class="p-3 color2 fa-brands fa-facebook-f fa-lg m" style="color: #ffffff"></i></a>
+              <a href="#">
+                <i class="p-3 color2 fa-brands fa-skype fa-lg m" style="color: #ffffff"></i></a>
+              <a href="#">
+                <i class="p-3 color2 fa-brands fa-linkedin fa-lg m" style="color: #ffffff"></i></a>
+              <a href="#">
+                <i class="p-3 color2 fa-brands fa-vimeo-v fa-lg m" style="color: #ffffff"></i></a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!--end footer-->
+
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
+    integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r"
+    crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.min.js"
+    integrity="sha384-0pUGZvbkm6XF6gxjEnlmuGrJXVbNuzT9qBBavbLwCsOGabYfZo0T0to5eqruptLy"
+    crossorigin="anonymous"></script>
+  <script src="/script.js"></script>
+  <script src="./loader.js"></script>
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+
+  <script>
+    // LOADER
+
+    window.addEventListener('load', () => {
+      const loader = document.querySelector('.loader');
+
+      loader.classList.add('loader-hidden');
+
+      loader.addEventListener('transitionend', () => {
+        document.body.removeChild(loader);
+      });
+    });
+
+
+    function Dark() {
+
+      let bodyId = document.getElementById('bodyId');
+      bodyId.style.backgroundColor = '#170F2F'
+      bodyId.style.color = 'White'
+      bodyId.style.transition = '0.5s'
+
+    }
+
+
+    function White() {
+      let bodyId = document.getElementById('bodyId');
+      bodyId.style.backgroundColor = 'white'
+      bodyId.style.color = 'black'
+      bodyId.style.transition = '0.5s'
+    }
+
+    AOS.init();
+
+  </script>
+</body>
+
+</html>
