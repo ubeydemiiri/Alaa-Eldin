@@ -1,0 +1,890 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style-admin-quiz.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+    <title>Admin Dashboard</title>
+</head>
+
+<body class=".body">
+    <div class="sticky-top">
+
+
+        <!------Top bar-------->
+
+
+        <div class=" bg-white   py-2 d-none d-md-block ">
+            <div class="container-fluid d-flex justify-content-between">
+
+                <span>Call Us: +0090 555-149-7053 - Mail Us: Itcroc@mail.com</span>
+                <span class="d-flex gap-2 social">
+                    <span>
+                        <svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" fill="currentColor"
+                            class="bi bi-geo-alt-fill me-1" viewBox="0 0 16 16">
+                            <path fill="#5f2ded"
+                                d="M8 16s6-5.686 6-10A6 6 0 0 0 2 6c0 4.314 6 10 6 10m0-7a3 3 0 1 1 0-6 3 3 0 0 1 0 6" />
+                        </svg>
+                        684 West College St. Sun City, USA</span>
+
+                    <span class="d-flex gap-2">
+                        <a href="#">
+                            <svg style="width: 20px; height: 20px" xmlns="http://www.w3.org/2000/svg"
+                                viewBox="0 0 320 512">
+                                <!--!Font Awesome Free 6.6.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.-->
+                                <path fill="#ffffff"
+                                    d="M80 299.3V512H196V299.3h86.5l18-97.8H196V166.9c0-51.7 20.3-71.5 72.7-71.5c16.3 0 29.4 .4 37 1.2V7.9C291.4 4 256.4 0 236.2 0C129.3 0 80 50.5 80 159.4v42.1H14v97.8H80z" />
+                            </svg>
+                        </a>
+                        <a href="#">
+                            <svg style="width: 20px; height: 20px" xmlns="http://www.w3.org/2000/svg"
+                                viewBox="0 0 512 512">
+                                <!--!Font Awesome Free 6.6.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.-->
+                                <path fill="#ffffff"
+                                    d="M459.4 151.7c.3 4.5 .3 9.1 .3 13.6 0 138.7-105.6 298.6-298.6 298.6-59.5 0-114.7-17.2-161.1-47.1 8.4 1 16.6 1.3 25.3 1.3 49.1 0 94.2-16.6 130.3-44.8-46.1-1-84.8-31.2-98.1-72.8 6.5 1 13 1.6 19.8 1.6 9.4 0 18.8-1.3 27.6-3.6-48.1-9.7-84.1-52-84.1-103v-1.3c14 7.8 30.2 12.7 47.4 13.3-28.3-18.8-46.8-51-46.8-87.4 0-19.5 5.2-37.4 14.3-53 51.7 63.7 129.3 105.3 216.4 109.8-1.6-7.8-2.6-15.9-2.6-24 0-57.8 46.8-104.9 104.9-104.9 30.2 0 57.5 12.7 76.7 33.1 23.7-4.5 46.5-13.3 66.6-25.3-7.8 24.4-24.4 44.8-46.1 57.8 21.1-2.3 41.6-8.1 60.4-16.2-14.3 20.8-32.2 39.3-52.6 54.3z" />
+                            </svg>
+                        </a>
+                        <a href="#">
+                            <svg style="width: 20px; height: 20px" xmlns="http://www.w3.org/2000/svg"
+                                viewBox="0 0 448 512">
+                                <!--!Font Awesome Free 6.6.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.-->
+                                <path fill="#ffffff"
+                                    d="M224.1 141c-63.6 0-114.9 51.3-114.9 114.9s51.3 114.9 114.9 114.9S339 319.5 339 255.9 287.7 141 224.1 141zm0 189.6c-41.1 0-74.7-33.5-74.7-74.7s33.5-74.7 74.7-74.7 74.7 33.5 74.7 74.7-33.6 74.7-74.7 74.7zm146.4-194.3c0 14.9-12 26.8-26.8 26.8-14.9 0-26.8-12-26.8-26.8s12-26.8 26.8-26.8 26.8 12 26.8 26.8zm76.1 27.2c-1.7-35.9-9.9-67.7-36.2-93.9-26.2-26.2-58-34.4-93.9-36.2-37-2.1-147.9-2.1-184.9 0-35.8 1.7-67.6 9.9-93.9 36.1s-34.4 58-36.2 93.9c-2.1 37-2.1 147.9 0 184.9 1.7 35.9 9.9 67.7 36.2 93.9s58 34.4 93.9 36.2c37 2.1 147.9 2.1 184.9 0 35.9-1.7 67.7-9.9 93.9-36.2 26.2-26.2 34.4-58 36.2-93.9 2.1-37 2.1-147.8 0-184.8zM398.8 388c-7.8 19.6-22.9 34.7-42.6 42.6-29.5 11.7-99.5 9-132.1 9s-102.7 2.6-132.1-9c-19.6-7.8-34.7-22.9-42.6-42.6-11.7-29.5-9-99.5-9-132.1s-2.6-102.7 9-132.1c7.8-19.6 22.9-34.7 42.6-42.6 29.5-11.7 99.5-9 132.1-9s102.7-2.6 132.1 9c19.6 7.8 34.7 22.9 42.6 42.6 11.7 29.5 9 99.5 9 132.1s2.7 102.7-9 132.1z" />
+                            </svg>
+                        </a>
+                        <a href="#">
+                            <svg style="width: 20px; height: 20px" xmlns="http://www.w3.org/2000/svg"
+                                viewBox="0 0 576 512">
+                                <!--!Font Awesome Free 6.6.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.-->
+                                <path fill="#ffffff"
+                                    d="M549.7 124.1c-6.3-23.7-24.8-42.3-48.3-48.6C458.8 64 288 64 288 64S117.2 64 74.6 75.5c-23.5 6.3-42 24.9-48.3 48.6-11.4 42.9-11.4 132.3-11.4 132.3s0 89.4 11.4 132.3c6.3 23.7 24.8 41.5 48.3 47.8C117.2 448 288 448 288 448s170.8 0 213.4-11.5c23.5-6.3 42-24.2 48.3-47.8 11.4-42.9 11.4-132.3 11.4-132.3s0-89.4-11.4-132.3zm-317.5 213.5V175.2l142.7 81.2-142.7 81.2z" />
+                            </svg>
+                        </a>
+                    </span>
+                </span>
+            </div>
+        </div>
+        <!--------End top bar--------->
+
+        <!------Navbar---------->
+        <div class="navbar  bg-white  navbar-expand-lg   py-4">
+            <div class="container">
+                <a href="./index.html"><img loading="lazy" src="./img/logo/logo_1.png" alt="logo" /></a>
+
+                <div class="offcanvas offcanvas-end   ps-3" id="navbarNav"
+                    style="margin-left: 130px;  width: 200px">
+                    <ul class="navbar-nav">
+                        <li class="nav-item dropdown m-2">
+                            <a href="" class="nav-link dropdown-toggle" role="button" data-bs-toggle="dropdown"
+                                data-bs-auto-close="outside">Home</a>
+                            <ul class="dropdown-menu">
+                                <li><a href="./index.html" class="dropdown-item">Home-1</a></li>
+                                <li><a href="./home.html" class="dropdown-item">home-2</a></li>
+                            </ul>
+                        </li>
+
+                        <li class="nav-item dropdown m-2">
+                            <a href="" class="nav-link dropdown-toggle" role="button" data-bs-toggle="dropdown"
+                                data-bs-auto-close="outside">Blog</a>
+                            <ul class="dropdown-menu">
+                                <li><a href="./blogdetails.html" class="dropdown-item">Blog-details</a></li>
+                                <li><a href="./blogdetails.html" class="dropdown-item">Blog-details(Dark)</a></li>
+                            </ul>
+                        </li>
+                        <li class="nav-item dropdown m-2">
+                            <a href="" class="nav-link dropdown-toggle" role="button" data-bs-toggle="dropdown"
+                                data-bs-auto-close="outside">buying</a>
+                            <ul class="dropdown-menu">
+                                <li><a href="./shop.html" class="dropdown-item">Shop</a></li>
+                                <li><a href="./productdetails.html" class="dropdown-item">Product Detail</a></li>
+
+                            </ul>
+                        </li>
+                        <li class="nav-item dropdown m-2">
+                            <a href="" class="nav-link dropdown-toggle" role="button" data-bs-toggle="dropdown"
+                                data-bs-auto-close="outside">Admin</a>
+                            <ul class="dropdown-menu">
+                                <li><a href="./admin-course.html" class="dropdown-item">Admin</a></li>
+                                <li><a href="./admin-dashboard.html" class="dropdown-item">admin-dashboard</a></li>
+                                <li><a href="./admin-message.html" class="dropdown-item">admin-message</a></li>
+                                <li><a href="./admin-profile.html" class="dropdown-item">admin-profile</a></li>
+                                <li><a href="./admin-quiz-attempts.html"
+                                        class="dropdown-item">admin-quiz-attempts</a>
+                                </li>
+                                <li><a href="./admin-reviews.html" class="dropdown-item">admin-reviews</a></li>
+                                <li><a href="./admin-settings.html" class="dropdown-item">admin-settings</a></li>
+
+
+                            </ul>
+                        </li>
+                        <li class="nav-item dropdown m-2">
+                            <a href="" class="nav-link dropdown-toggle" role="button" data-bs-toggle="dropdown"
+                                data-bs-auto-close="outside">Courses</a>
+                            <ul class="dropdown-menu">
+                                <li><a href="./courses.html" class="dropdown-item">Courses</a></li>
+                                <li><a href="./course-dark.html" class="dropdown-item">Courses(Dark)</a></li>
+                                <li><a href="./course-grid.html" class="dropdown-item">Courses-grid</a></li>
+                                <li><a href="./course-grid-dark.html" class="dropdown-item">Courses-grid(Dark)</a>
+                                </li>
+                                <li><a href="./course-list.html" class="dropdown-item">Courses-list</a></li>
+                                <li><a href="./course-list-dark.html" class="dropdown-item">Courses-list(Dark)</a>
+                                </li>
+                                <li><a href="./courseMaterials.html" class="dropdown-item">course-materials</a></li>
+                                <li><a href="./error.html" class="dropdown-item">Eror</a></li>
+                            </ul>
+                        </li>
+                        <li class="nav-item dropdown m-2">
+                            <a href="" class="nav-link dropdown-toggle" role="button" data-bs-toggle="dropdown"
+                                data-bs-auto-close="outside">Pages</a>
+                            <ul class="dropdown-menu">
+                                <li><a href="./assignment.html" class="dropdown-item">ِAssignmet</a></li>
+                                <li><a href="./instructor.html" class="dropdown-item">Instructor</a></li>
+                                <li><a href="./instructordetails.html" class="dropdown-item">instructor-details</a>
+                                </li>
+                                <li><a href="./lesson.html" class="dropdown-item">lesson</a></li>
+                                <li><a href="./lesson1.html" class="dropdown-item">Lesson 1</a></li>
+                                <li><a href="./lesson2.html" class="dropdown-item">Lesson 2</a></li>
+                                <li><a href="./lesson-course-meterials.html"
+                                        class="dropdown-item">lesson-course-meterials</a></li>
+
+                                <li><a href="./preview.html" class="dropdown-item">Preview</a></li>
+                                <li><a href="./productdetails.html" class="dropdown-item">productdetails</a></li>
+                            </ul>
+                        </li>
+
+
+
+                        <hr class="d-md-none d-block" />
+
+                        <div class="d-md-none d-block mt-5" style="margin-left: 80px">
+                            <i class="p-3 fa-brands fa-twitter fa-lg sky"></i>
+
+                            <i class="p-3 fa-brands fa-facebook-f fa-lg sky"></i>
+
+                            <i class="p-3 fa-brands fa-skype fa-lg sky"></i>
+
+                            <i class="p-3 fa-brands fa-linkedin fa-lg sky"></i>
+                        </div>
+                    </ul>
+                </div>
+                <div class="d-flex">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor"
+                        class="bi bi-person-fill d-none d-md-block" viewBox="0 0 16 16">
+                        <path d="M3 14s-1 0-1-1 1-4 6-4 6 3 6 4-1 1-1 1zm5-6a3 3 0 1 0 0-6 3 3 0 0 0 0 6" />
+                    </svg>
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor"
+                        class="bi bi-cart4 me-2" viewBox="0 0 16 16">
+                        <path
+                            d="M0 2.5A.5.5 0 0 1 .5 2H2a.5.5 0 0 1 .485.379L2.89 4H14.5a.5.5 0 0 1 .485.621l-1.5 6A.5.5 0 0 1 13 11H4a.5.5 0 0 1-.485-.379L1.61 3H.5a.5.5 0 0 1-.5-.5M3.14 5l.5 2H5V5zM6 5v2h2V5zm3 0v2h2V5zm3 0v2h1.36l.5-2zm1.11 3H12v2h.61zM11 8H9v2h2zM8 8H6v2h2zM5 8H3.89l.5 2H5zm0 5a1 1 0 1 0 0 2 1 1 0 0 0 0-2m-2 1a2 2 0 1 1 4 0 2 2 0 0 1-4 0m9-1a1 1 0 1 0 0 2 1 1 0 0 0 0-2m-2 1a2 2 0 1 1 4 0 2 2 0 0 1-4 0" />
+                    </svg>
+
+                    <form action="" class="d-flex">
+                        <button class="btn btn-outline-primary d-none d-md-block">
+                            Get Start
+                        </button>
+                    </form>
+
+                    <buttom class="navbar-toggler me-5" type="buttom" data-bs-toggle="offcanvas"
+                        data-bs-target="#navbarNav">
+                        <span class="navbar-toggler-icon"></span>
+                    </buttom>
+                </div>
+            </div>
+        </div>
+
+        <!-------End navbar----------->
+    </div>
+    <section>
+        <div class="container menu">
+            <div class="row  rounded">
+                <div class="col-lg-3  bg-light me-5  rounded">
+                    <div class="bg-light p-5 rounded">
+                        <div>
+                            <h6 class="text-secondary fw-bold px-3 py-2" style="background-color:#dddbdb ;">Welcome,
+                                Micle
+                                Obema</h6>
+                            <a href="admin-dashboard.html"
+                                class="d-flex text-decoration-none align-items-center mt-3"><i
+                                    class="fa-solid fa-house me-2"></i>Dashboard</a>
+                            <hr>
+                            <a href="admin-profile.html  "
+                                class="d-flex text-decoration-none align-items-center mt-3"><i
+                                    class="fa-solid fa-user  me-2"></i>My Profile</a>
+                            <hr>
+                            <div class="d-flex align-items-center"><a href="admin-message.html"
+                                    class=" text-decoration-none me-5 "><i
+                                        class="fa-regular fa-message me-2"></i>Message
+                                </a><span class="ms-5 px-2  rounded-pill span">12</span></div>
+                            <hr>
+                            <a href="admin-course.html" class="d-flex text-decoration-none align-items-center mt-3"><i
+                                    class="fa-solid fa-bookmark me-2"></i>Courses</a>
+                            <hr>
+                            <a href="admin-reviews.html" class="d-flex text-decoration-none align-items-center mt-3"><i
+                                    class="fa-regular fa-star me-2"></i>Reviews</a>
+                            <hr>
+                            <a href="admin-quiz-attempts.html"
+                                class="d-flex text-decoration-none align-items-center mt-3"><i
+                                    class="fa-regular fa-circle-question me-2"></i>Quiz Attempts</a>
+                            <hr>
+                        </div>
+                        <div>
+                            <h6 class="text-secondary fw-bold px-3 py-1" style="background-color:#dddbdb ;">user</h6>
+
+                            <a href="admin-settings.html" class="d-flex text-decoration-none align-items-center "><i
+                                    class="fa-solid fa-gear me-2"></i></i>Setting</a>
+                            <hr>
+                            <a href="#" class="d-flex text-decoration-none align-items-center "><i
+                                    class="fa-solid fa-volume-low me-2"></i>Logout</a>
+                            <hr>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-8  bg-light rounded ">
+                    <div class=" p-5">
+                        <div class=" border-bottom mx-2  pb-2">
+                            <h4 class="text-black fw-bold ">Dashboard</h4>
+                        </div>
+                        <div class="row">
+                            <div class="col-lg-4 col-md-6 col-sm-12 bg-light">
+                                <div class="card card-body mt-5 rounded-4">
+                                    <div class="d-flex align-items-center justify-content-center my-4">
+                                        <div><img src="./img/counter/counter__1.png" alt=""></div>
+                                        <div>
+                                            <h3 class="fw-bold ms-2 mt-3">900+</h3>
+                                            <p class="text-black fw-bold ms-2 text-truncate">Enrolled <br> Courses</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-4 col-md-6 col-sm-12 bg-light">
+                                <div class="card card-body   mt-5 rounded-4">
+                                    <div class="d-flex align-items-center justify-content-center my-4 ">
+                                        <div><img src="./img/counter/counter__2.png" alt=""></div>
+                                        <div>
+                                            <h3 class="fw-bold ms-2 mt-3">500+</h3>
+                                            <p class="text-black fw-bold ms-2">Active <br> Courses</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-4 col-md-6 col-sm-12 bg-light">
+                                <div class="card card-body bg-light  mt-5 rounded-4">
+                                    <div class="d-flex align-items-center justify-content-center my-4">
+                                        <div><img src="./img/counter/counter__3.png" alt=""></div>
+                                        <div>
+                                            <h3 class="fw-bold ms-2 mt-3">300k</h3>
+                                            <p class="text-black fw-bold ms-2">Complete <br> Courses</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-4 col-md-6 col-sm-12 bg-light">
+                                <div class="card card-body  mt-5 rounded-4">
+                                    <div class="d-flex align-items-center justify-content-center my-4">
+                                        <div><img src="./img/counter/counter__4.png" alt=""></div>
+                                        <div>
+                                            <h3 class="fw-bold ms-2 mt-3">1500+</h3>
+                                            <p class="text-black fw-bold ms-2 ">Total <br> Courses</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-4 col-md-6 col-sm-12">
+                                <div class="card card-body  mt-5 rounded-4 bg-light">
+                                    <div class="d-flex align-items-center justify-content-center my-4">
+                                        <div><img src="./img/counter/counter__3.png" alt=""></div>
+                                        <div>
+                                            <h3 class="fw-bold ms-2 mt-3">30k</h3>
+                                            <p class="text-black fw-bold ms-2 w">Total <br> Students</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-4 col-md-6 col-sm-12">
+                                <div class="card card-body   mt-5 rounded-4 bg-light">
+                                    <div class="d-flex align-items-center justify-content-center my-4">
+                                        <div><img src="./img/counter/counter__4.png" alt=""></div>
+                                        <div>
+                                            <h3 class="fw-bold ms-2 mt-3">90,000K+</h3>
+                                            <p class="text-black fw-bold ms-2">Total <br> Earning</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-lg-3"></div>
+                <div class="col-lg-8 ">
+
+                    <div class="row p-5 border-bottom mx-2  pb-2 ">
+                        <div class="col-md-6 border-bottom pb-3">
+                            <h4 class="text-black fw-bold me-5 ">Dashboard</h4>
+                        </div>
+                        <div class="col-md-3 dropdown border-bottom pb-3">
+                            <button type="button" class="btn  w-100" data-bs-toggle="dropdown">
+                                <div class="d-flex justify-content-between align-items-center">
+                                    <p class="mb-0">HTML</p>
+                                    <i class="fa-solid fa-chevron-down all"></i>
+                                </div>
+                            </button>
+                            <ul class="dropdown-menu w-100 p-0 rounded">
+                                <li class="fa-chevron-2"><a class="dropdown-item fa-chevron-3" href="#">HTML</a></li>
+                                <li class="fa-chevron-2"><a class="dropdown-item" href="#">CSS</a></li>
+                                <li class="fa-chevron-2"><a class="dropdown-item" href="#">JAVASCRIPT</a></li>
+                                <li class="fa-chevron-2"><a class="dropdown-item" href="#">PHP</a></li>
+                                <li class="fa-chevron-2"><a class="dropdown-item" href="#">WordPress</a></li>
+                            </ul>
+                        </div>
+
+                        <div class="col-md-3 d-flex border-bottom pb-3">
+                            <div>
+                                <h4 class="mt-1 fw-bold text-black me-2">Traffic</h4>
+                            </div>
+                            <div class=" dropdown">
+                                <button type="button" class="btn  px-3 w-100" data-bs-toggle="dropdown">
+                                    <div class="d-flex justify-content-between align-items-center">
+                                        <p class="mb-0">Today</p>
+                                        <div> <i class="fa-solid fa-chevron-down  ms-5 "></i></div>
+                                    </div>
+                                </button>
+                                <ul class="dropdown-menu w-100 p-0 rounded">
+                                    <li class="fa-chevron-2 "><a class="dropdown-item fa-chevron-3" href="#">Today</a>
+                                    </li>
+                                    <li class="fa-chevron-2"><a class="dropdown-item " href="#">Weekly</a></li>
+                                    <li class="fa-chevron-2"><a class="dropdown-item " href="#">Monthly</a></li>
+                                    <li class="fa-chevron-2"><a class="dropdown-item " href="#">Yearly</a></li>
+
+                                </ul>
+                            </div>
+                        </div>
+
+
+
+                    </div>
+
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-lg-3"></div>
+                <div class="col-lg-8">
+                    <div class="row d-flex align-items-center">
+                        <div class="col-lg-6 col-md-12">
+                            <canvas id="myChart" style="width:100%;max-width:900px;"></canvas>
+                        </div>
+                        <div class="col-lg-6 col-md-12">
+                            <div id="myPlot" style="width: 400px ; max-width: 100%  "></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row gx-3">
+                <div class="col-lg-3"></div>
+                <div class="col-lg-8">
+                    <div class="row gy-4 ">
+                        <div class="col-lg-6 col-md-12 over">
+                            <div class="d-flex justify-content-between border-bottom pb-3">
+                                <h4 class="text-black fw-bold  ">Popular Instructor</h4>
+                                <a href="course.html" class="text-decoration-none text-secondary ">See More...</a>
+                            </div>
+                            <div class="card card-body mt-4 border-0   card-dash">
+                                <div class="d-flex justify-content-between align-items-center border-bottom">
+                                    <div class="d-flex "><img src="./img/teacher/teacher__1.png" alt=""
+                                            class="rounded-circle card-dash-img">
+                                        <div class="ms-2">
+                                            <a href="instructor-details.html"
+                                                class="text-decoration-none  ms-1 fw-bold ">Sanki
+                                                Jho</a>
+                                            <div>
+
+                                                <div class="d-flex flex-row mt-2">
+                                                    <p class=""><i class="fa-solid fa-message me-1"></i>25,895
+                                                        Reviews</p>
+                                                    <p class="ms-3"><i class="fa-solid fa-user"></i> 692 Students</p>
+                                                </div>
+                                                <p class=""><i class="fa-solid fa-film"></i> 15+ Courses</p>
+                                            </div>
+
+                                        </div>
+
+                                    </div>
+
+
+                                </div>
+                            </div>
+                            <div class="card card-body mt-4 border-0   card-dash">
+                                <div class="d-flex justify-content-between align-items-center border-bottom">
+                                    <div class="d-flex "><img src="./img/teacher/teacher__2.png" alt=""
+                                            class="rounded-circle card-dash-img">
+                                        <div class="ms-2">
+                                            <a href="instructor-details.html"
+                                                class="text-decoration-none  ms-1 fw-bold ">Nidmjae Mollin</a>
+                                            <div>
+
+                                                <div class="d-flex flex-row mt-2">
+                                                    <p class=""><i class="fa-solid fa-message me-1"></i>21,895
+                                                        Reviews</p>
+                                                    <p class="ms-3"><i class="fa-solid fa-user"></i> 95 Students</p>
+                                                </div>
+                                                <p class=""><i class="fa-solid fa-film"></i> 10+ Courses</p>
+                                            </div>
+
+                                        </div>
+
+                                    </div>
+
+
+                                </div>
+                            </div>
+                            <div class="card card-body mt-4 border-0  card-dash">
+                                <div class="d-flex justify-content-between align-items-center border-bottom">
+                                    <div class="d-flex "><img src="./img/teacher/teacher__3.png" alt=""
+                                            class="rounded-circle card-dash-img">
+                                        <div class="ms-2">
+                                            <a href="instructor-details.html"
+                                                class="text-decoration-none  ms-1 fw-bold ">Nidmjae Mollin</a>
+                                            <div>
+
+                                                <div class="d-flex flex-row mt-2">
+                                                    <p class=""><i class="fa-solid fa-message me-1"></i>17,895
+                                                        Reviews</p>
+                                                    <p class="ms-3"><i class="fa-solid fa-user"></i> 325 Students</p>
+                                                </div>
+                                                <p class=""><i class="fa-solid fa-film"></i> 20+ Courses</p>
+                                            </div>
+
+                                        </div>
+
+                                    </div>
+
+
+                                </div>
+                            </div>
+                            <div class="card card-body mt-4 border-0  card-dash">
+                                <div class="d-flex justify-content-between align-items-center border-bottom">
+                                    <div class="d-flex "><img src="./img/teacher/teacher__4.png" alt=""
+                                            class="rounded-circle card-dash-img">
+                                        <div class="ms-2">
+                                            <a href="instructor-details.html"
+                                                class="text-decoration-none  ms-1 fw-bold ">Sanki
+                                                Jho</a>
+                                            <div>
+
+                                                <div class="d-flex flex-row mt-2">
+                                                    <p class=""><i class="fa-solid fa-message me-1"></i>17,895
+                                                        Reviews</p>
+                                                    <p class="ms-3"><i class="fa-solid fa-user"></i> 325 Students</p>
+                                                </div>
+                                                <p class=""><i class="fa-solid fa-film"></i> 45+ Courses</p>
+                                            </div>
+
+                                        </div>
+
+                                    </div>
+
+
+                                </div>
+                            </div>
+                            <div class="card card-body mt-4 border-0   card-dash">
+                                <div class="d-flex justify-content-between align-items-center border-bottom">
+                                    <div class="d-flex "><img src="./img/teacher/teacher__5.png" alt=""
+                                            class="rounded-circle card-dash-img ">
+                                        <div class="ms-2">
+                                            <a href="instructor-details.html"
+                                                class="text-decoration-none  ms-1 fw-bold ">Sanki
+                                                Jho</a>
+                                            <div>
+
+                                                <div class="d-flex flex-row mt-2">
+                                                    <p class=""><i class="fa-solid fa-message me-1"></i>17,895
+                                                        Reviews</p>
+                                                    <p class="ms-3"><i class="fa-solid fa-user"></i> 325 Students</p>
+                                                </div>
+                                                <p class=""><i class="fa-solid fa-film"></i> 45+ Courses</p>
+                                            </div>
+
+                                        </div>
+
+                                    </div>
+
+
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-6 col-md-12 over">
+                            <div class="d-flex justify-content-between border-bottom pb-3">
+                                <h4 class="text-black fw-bold  ">Recent Course</h4>
+                                <a href="course.html" class="text-decoration-none text-secondary ">See More...</a>
+                            </div>
+                            <div class="card card-body mt-4 border-0   card-dash-2">
+                                <div class="d-flex border-bottom pb-4">
+                                    <div><img src="./img/grid/grid_1.png" alt="" class="img-fluid mt-4"></div>
+                                    <div class="ms-2 d-flex flex-column">
+                                        <a href="course-details.html" class="text-decoration-none fs-5">Complete Python Zero to Hero in Python.</a>
+                                        <div class="d-flex mt-3"><a href="instructor-details.html"  class="text-decoration-none me-4"><i class="fa-solid fa-user text-black"></i> Jon <br> Ron</a>
+                                            <p  class="text-black me-4"><i class="fa-solid fa-book"></i> 9 <br> Lesson</p>
+                                            <p  class="text-black"><i class="fa-regular fa-clock"></i> 3 hr 30<br> min</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="card card-body mt-4 border-0   card-dash-2">
+                                <div class="d-flex border-bottom pb-4">
+                                    <div><img src="./img/grid/grid_2.png" alt="" class="img-fluid mt-4"></div>
+                                    <div class="ms-2 d-flex flex-column">
+                                        <a href="course-details.html" class="text-decoration-none fs-5">Complete Python Zero to Hero in Python.</a>
+                                        <div class="d-flex mt-3"><a href="instructor-details.html"  class="text-decoration-none me-4"><i class="fa-solid fa-user text-black"></i> Jon <br> Ron</a>
+                                            <p  class="text-black me-4"><i class="fa-solid fa-book"></i> 9 <br> Lesson</p>
+                                            <p  class="text-black"><i class="fa-regular fa-clock"></i> 2 hr 30<br> min</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="card card-body mt-4 border-0   card-dash-2">
+                                <div class="d-flex border-bottom pb-4">
+                                    <div><img src="./img/grid/grid_3.png" alt="" class="img-fluid mt-4"></div>
+                                    <div class="ms-2 d-flex flex-column">
+                                        <a href="course-details.html" class="text-decoration-none fs-5">Voluptatum eius quo consectetur atque.</a>
+                                        <div class="d-flex mt-3"><a href="instructor-details.html"  class="text-decoration-none me-4"><i class="fa-solid fa-user text-black"></i> Jon <br> Ron</a>
+                                            <p  class="text-black me-4"><i class="fa-solid fa-book"></i> 5 <br> Lesson</p>
+                                            <p  class="text-black"><i class="fa-regular fa-clock"></i> 1 hr 30<br> min</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="card card-body mt-4 border-0   card-dash-2">
+                                <div class="d-flex border-bottom pb-4">
+                                    <div><img src="./img/grid/grid_4.png" alt="" class="img-fluid mt-4"></div>
+                                    <div class="ms-2 d-flex flex-column">
+                                        <a href="course-details.html" class="text-decoration-none fs-5">Sapiente recusandae nemo sint hic iste!</a>
+                                        <div class="d-flex mt-3"><a href="instructor-details.html"  class="text-decoration-none me-4"><i class="fa-solid fa-user text-black"></i> Mini<br> Ron</a>
+                                            <p  class="text-black me-4"><i class="fa-solid fa-book"></i> 7 <br> Lesson</p>
+                                            <p  class="text-black"><i class="fa-regular fa-clock"></i> 3 hr 30<br> min</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
+                        <div class="col-lg-6 col-md-12 over mt-5">
+                            <div class="d-flex justify-content-between border-bottom pb-3 mt-5">
+                                <h4 class="text-black fw-bold  ">Notice Board</h4>
+                                <a href="course.html" class="text-decoration-none text-secondary ">See More...</a>
+                            </div>
+                            <div class="card card-body mt-4 border-0   card-dash-3">
+                                <div class="d-flex border-bottom pb-4">
+                                    <div><img src="./img/blog/blog_6.png" alt="" class="img-fluid mt-4"></div>
+                                    <div class="ms-2 d-flex flex-column">
+                                        <a href="course-details.html" class="text-decoration-none fs-5">Lorem ipsum dolor sit amet consectetur adipisicing elit. Libero velit quos dolore voluptatem...</a>
+                                       
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="card card-body mt-4 border-0   card-dash-3">
+                                <div class="d-flex border-bottom pb-4">
+                                    <div><img src="./img/blog/blog_7.png" alt="" class="img-fluid mt-4"></div>
+                                    <div class="ms-2 d-flex flex-column">
+                                        <a href="course-details.html" class="text-decoration-none fs-5">Lorem ipsum dolor sit amet consectetur adipisicing elit. Libero velit quos dolore aedgeds...</a>
+                                      
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="card card-body mt-4 border-0   card-dash-3">
+                                <div class="d-flex border-bottom pb-4">
+                                    <div><img src="./img/blog/blog_8.png" alt="" class="img-fluid mt-4"></div>
+                                    <div class="ms-2 d-flex flex-column">
+                                        <a href="course-details.html" class="text-decoration-none fs-5">Lorem ipsum dolor sit amet consectetur adipisicing elit. Libero velit quos dolore wdedged...</a>
+                                      
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="card card-body mt-4 border-0   card-dash-3">
+                                <div class="d-flex border-bottom pb-4">
+                                    <div><img src="./img/blog/blog_9.png"  alt="" class="img-fluid mt-4"></div>
+                                    <div class="ms-2 d-flex flex-column">
+                                        <a href="course-details.html" class="text-decoration-none fs-5">Lorem ipsum dolor sit amet consectetur adipisicing elit. Libero velit quos dolore nidelsd...</a>
+                                      
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="card card-body mt-4 border-0   card-dash-3">
+                                <div class="d-flex border-bottom pb-4">
+                                    <div><img src="./img/blog/blog_4.png" alt="" class="img-fluid mt-4"></div>
+                                    <div class="ms-2 d-flex flex-column">
+                                        <a href="course-details.html" class="text-decoration-none fs-5">Lorem ipsum dolor sit amet consectetur adipisicing elit. Libero velit quos dolore midnied...</a>
+                                      
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-6 col-md-12 over mt-5">
+                            <div class="d-flex justify-content-between border-bottom pb-3 mt-5">
+                                <h4 class="text-black fw-bold  ">Notifications</h4>
+                                <a href="course.html" class="text-decoration-none text-secondary ">See More...</a>
+                            </div>
+                            <div class="card card-body mt-4 border-0   card-dash-4">
+                                <div class="d-flex border-bottom pb-4">
+                                    <div><img src="./img/dashbord/profile.png" alt="" class="img-fluid mt-4"></div>
+                                    <div class="ms-2 d-flex flex-column">
+                                        <a href="./admin-dashboard.html" class="text-decoration-none fs-5 mt-3">
+                                            latest resume has been updated!</a>
+                                            <p class="text-black mt-2">2 hours Ago</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="card card-body mt-4 border-0   card-dash-4">
+                                <div class="d-flex border-bottom pb-4">
+                                    <div><img src="./img/dashbord/lock.png" alt="" class="img-fluid mt-4"></div>
+                                    <div class="ms-2 d-flex flex-column">
+                                        <a href="./admin-dashboard.html" class="text-decoration-none fs-5 mt-3">Password has been changed 3 times</a>
+                                        <p class="text-black mt-2">3 hours Ago</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="card card-body mt-4 border-0   card-dash-4">
+                                <div class="d-flex border-bottom pb-4">
+                                    <div><img src="./img/dashbord/verify.png" alt="" class="img-fluid mt-4"></div>
+                                    <div class="ms-2 d-flex flex-column">
+                                        <a href="./admin-dashboard.html" class="text-decoration-none fs-5 mt-3">
+                                            Account has been created successfully</a>
+                                            <p class="text-black mt-2">50 Min Ago</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="card card-body mt-4 border-0   card-dash-4">
+                                <div class="d-flex border-bottom pb-4">
+                                    <div><img src="./img/dashbord/success.png"  alt="" class="img-fluid mt-4"></div>
+                                    <div class="ms-2 d-flex flex-column">
+                                        <a href="./admin-dashboard.html" class="text-decoration-none fs-5 mt-3">Successfully applied for a job Developer</a>
+                                        <p class="text-black mt-2">30 Min Ago</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="card card-body mt-4 border-0   card-dash-4">
+                                <div class="d-flex border-bottom pb-4">
+                                    <div><img src="./img/dashbord/video.png" alt="" class="img-fluid mt-4"></div>
+                                    <div class="ms-2 d-flex flex-column">
+                                        <a href="./admin-dashboard.html" class="text-decoration-none fs-5 mt-3">Multi vendor course updated successfully</a>
+                                      <p class="text-black mt-2">3 hours Ago</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-lg-3"></div>
+                <div class="col-lg-8  rounded ">
+                    <div class="bg-light p-5">
+                        <div class="d-flex justify-content-between border-bottom mx-2  ">
+                            <h4 class="text-black fw-bold ">Total Feedbacks</h4>
+                            <a href="course.html" class="text-decoration-none">See More...</a>
+                        </div>
+                        <div class="row mt-3 px-4" >
+                            <div class="col-md-12 overflow-auto">
+                                <table class="table  table-borderless  kal ms-lg-2">
+                                    <thead class="ta">
+                                        <tr>
+                                           <th>Course Name</th>
+                                           <th>Enrolled</th>
+                                           <th>	Rating</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                      <tr>
+                                    <td><p class="text-secondary">Javascript</p></td>
+                                    </td>
+                                    <td><p class="text-secondary">1100</p></td>
+                                    <td><div class="d-flex yil mt-2"><i class="fa-solid fa-star me-2"></i>
+                                        <i class="fa-solid fa-star me-2"></i>
+                                        <i class="fa-solid fa-star me-2"></i>
+                                        <i class="fa-solid fa-star me-2"></i>
+                                        <i class="fa-regular fa-star"></i>
+                                    </div></td>
+                                  
+                               
+                                      </tr>
+                                      <tr class="ta">
+                                    <td><p class="text-secondary">PHP</p></td>
+                                    </td>
+                                    <td><p class="text-secondary">700</p></td>
+                                </td>
+                                <td><div class="d-flex yil mt-2"><i class="fa-solid fa-star me-2"></i>
+                                    <i class="fa-solid fa-star me-2"></i>
+                                    <i class="fa-solid fa-star me-2"></i>
+                                    <i class="fa-solid fa-star me-2"></i>
+                                    <i class="fa-regular fa-star"></i>
+                                </div></td>
+                                      </tr>
+                                      <tr>
+                                        <td><p class="text-secondary">HTML</p></td>
+                                    </td>
+                                    <td><p class="text-secondary">1350</p></td>
+                                </td>
+                                <td><div class="d-flex yil mt-2"><i class="fa-solid fa-star me-2"></i>
+                                    <i class="fa-solid fa-star me-2"></i>
+                                    <i class="fa-solid fa-star me-2"></i>
+                                    <i class="fa-solid fa-star me-2"></i>
+                                    <i class="fa-regular fa-star"></i>
+                                </div></td>
+                                      </tr>
+                                      <tr class="ta">
+                                        <td><p class="text-secondary">Graphic</p></td>
+                                        <td><p class="text-secondary">1266</p></td>
+                                    </td>
+                                    <td><div class="d-flex yil mt-2"><i class="fa-solid fa-star me-2"></i>
+                                        <i class="fa-solid fa-star me-2"></i>
+                                        <i class="fa-solid fa-star me-2"></i>
+                                        <i class="fa-solid fa-star me-2"></i>
+                                        <i class="fa-regular fa-star"></i>
+                                    </div></td>
+                                      </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                        </div>
+
+
+                    
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <footer class="footer bg-secon mar py-5 mt-5 ">
+        <div class="container">
+            <div class="row ">
+                <div class="col-md-6 mt-4">
+                    <a href="./index.html"><img class="mb-3 " src="./img/logo/logo_2.png" alt="logo"></a>
+                </div>
+                <div class="col-md-6 mt-4">
+                    <div class="input-group mb-3">
+                        <input type="email" class="form-control  py-3 rounded-0" placeholder="Enter your email here"
+                            aria-label="Enter your email here" aria-describedby="button-addon2" required>
+                        <button class="btn btn-primary  py-3 rounded-0" type="button" id="button-addon2">Subscribe
+                            Now</button>
+                    </div>
+                </div>
+                <hr class="mb-5 mt-3 w-100 mx-auto" style="color: #ffffff;">
+            </div>
+            <div class="row">
+                <div class="col-md-4">
+                    <h3 class="text-white fw-bold">About us</h3>
+                    <p class="p-secon my-4">orporate clients and leisure travelers has been relying on Groundlink for
+                        dependable safe, and
+                        professional chauffeured car end service in major cities across World.</p>
+                    <div class="d-flex align-items-center gap-3">
+                        <div class="social-icons">
+                            <i
+                                class="fa-brands fa-facebook-f bg-icon-footer py-2 px-2 rounded-circle me-2 icon-footer-hover"></i>
+                            <i
+                                class="fa-brands fa-twitter bg-icon-footer py-2 px-2 rounded-circle me-2 icon-footer-hover"></i>
+                            <i
+                                class="fa-brands fa-vimeo-v bg-icon-footer py-2 px-2 rounded-circle me-2 icon-footer-hover"></i>
+                            <i
+                                class="fa-brands fa-linkedin-in bg-icon-footer py-2 px-2 rounded-circle me-2 icon-footer-hover"></i>
+                            <i
+                                class="fa-brands fa-skype bg-icon-footer py-2 px-2 rounded-circle me-2 icon-footer-hover"></i>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-8">
+                    <div class="row">
+                        <div class="col-md-4">
+                            <h3 class="fw-bold text-white">Usefull Links</h3>
+                            <ul class="list-unstyled ">
+                                <li><a href="#" class=" fs-5 text-decoration-none p-secon img-text">About Us</a></li>
+                                <li><a href="#" class="fs-5 text-decoration-none p-secon img-text">Teachers</a></li>
+                                <li><a href="#" class="fs-5 text-decoration-none p-secon img-text">Partner</a></li>
+                                <li><a href="#" class="fs-5 text-decoration-none p-secon img-text">Room-Details</a></li>
+                                <li><a href="#" class="fs-5 text-decoration-none p-secon img-text">Gallery</a></li>
+                            </ul>
+                        </div>
+                        <div class="col-md-4">
+                            <h3 class="fw-bold text-white">Course</h3>
+                            <ul class="list-unstyled">
+                                <li><a href="#" class="fs-5 text-decoration-none p-secon img-text">Ui Ux Design</a></li>
+                                <li><a href="#" class="fs-5 text-decoration-none p-secon img-text">Web Development</a>
+                                </li>
+                                <li><a href="#" class="fs-5 text-decoration-none p-secon img-text">Business Strategy</a>
+                                </li>
+                                <li><a href="#" class="fs-5 text-decoration-none p-secon img-text">Softwere
+                                        Development</a></li>
+                                <li><a href="#" class="fs-5 text-decoration-none p-secon img-text">Business English</a>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="col-md-4">
+                            <h3 class="fw-bold text-white">Recent Post</h3>
+                            <a class="text-decoration-none text-color" href="#">
+                                <div class="d-flex gap-2">
+                                    <img src="./img/footer__1.png" alt="" class="img-fluid">
+                                    <span>
+                                        <h6 class="p-secon">02 Apr 2024</h6>
+                                        <h6 class="img-text  ">Best Your Business</h6>
+                                    </span>
+                                </div>
+                            </a>
+                            <a class="text-decoration-none text-color" href="#">
+                                <div class="d-flex gap-2 mt-2">
+                                    <img src="./img/footer__1.png" alt="" class="img-fluid">
+                                    <span>
+                                        <h6 class="p-secon">02 Apr 2024</h6>
+                                        <h6 class="img-text  ">Best Your Business</h6>
+                                    </span>
+                                </div>
+                            </a>
+                            <a class="text-decoration-none text-color" href="#">
+                                <div class="d-flex gap-2 mt-2">
+                                    <img src="./img/footer__2.png" alt="" class="img-fluid">
+                                    <span>
+                                        <h6 class="p-secon">02 Apr 2024</h6>
+                                        <h6 class="img-text  ">Best Your Business</h6>
+                                    </span>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <hr class="mt-3 w-100 mx-auto" style="color: #ffffff;">
+            <div class="row mt-5 justify-content-center">
+                <div class="col-md-6">
+                    <p class="p-secon">
+                        © 2024 Powered by <span class="img-text">Alaa Eldin Alhallak.</span>
+                        All Rights Reserved.</p>
+                </div>
+                <div class="col-md-3 social">
+                    <p class="p-secon">
+                        <span class="img-text p-secon">Terms of Use
+                        </span> | <span class="img-text p-secon">Privacy Policy</span>
+                    </p>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.9.4/Chart.js"></script>
+    <script src="https://cdn.plot.ly/plotly-latest.min.js"></script>
+    <script src="./script-admin-quiz.js"></script>
+    <!-- <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script> -->
+
+    
+
+
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
+        integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.min.js"
+        integrity="sha384-0pUGZvbkm6XF6gxjEnlmuGrJXVbNuzT9qBBavbLwCsOGabYfZo0T0to5eqruptLy"
+        crossorigin="anonymous"></script>
+
+</body>
+
+</html>
